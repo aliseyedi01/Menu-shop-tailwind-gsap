@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.display-none {
+  @apply hidden;
+}
+
+/* @layer utilities {
+  
+} */
+
+.btn1 {
+  background-color: rgb(238, 143, 19);
+  cursor: pointer;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 17px;
+  padding: 10px 20px;
+  position: relative;
+  z-index: 0;
+  padding-bottom: 12px;
+}
+
+.btn1::before {
+  content: "";
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0px;
+  border-radius: inherit;
+  z-index: 1;
+  clip-path: circle(23.3% at 50% 100%);
+
+  transition: all 700ms;
+}
+
+.btn1:hover:before {
+  content: url(/src/svg/top.svg);
+  clip-path: circle(111.8% at 50% 100%);
+  line-height: 55px;
+}
+
+.btn2 {
+  background-color: rgb(238, 143, 19);
+  cursor: pointer;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 17.5px;
+  padding: 10px 20.5px;
+  position: relative;
+  z-index: 0;
+  padding-top: 12px;
+}
+
+.btn2::before {
+  content: "";
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0px;
+  border-radius: inherit;
+  z-index: 1;
+  clip-path: circle(23.3% at 50% 0);
+  transition: all 700ms;
+}
+
+.btn2:hover:before {
+  content: url(/src/svg/button.svg);
+  clip-path: circle(112% at 50% 0);
+  line-height: 55px;
+}
