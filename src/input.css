@@ -6,10 +6,6 @@
   @apply hidden;
 }
 
-/* @layer utilities {
-  
-} */
-
 .btn1 {
   background-color: rgb(238, 143, 19);
   cursor: pointer;
