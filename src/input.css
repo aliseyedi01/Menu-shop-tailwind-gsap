@@ -69,4 +69,5 @@
   content: url(/src/svg/button.svg);
   clip-path: circle(112% at 50% 0);
   line-height: 55px;
+  background-image: red;
 }
